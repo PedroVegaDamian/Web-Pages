@@ -4,9 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Pages</title>
+    <style>
+      body {
+        color: white;
+        font-family: "system-ui", serif;
+        background-image: url("./background.png");
+      }
+
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      main {
+        gap: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        width: fit-content;
+        border-radius: 16px;
+        margin-inline: auto;
+        padding: 1.5rem 2rem;
+        justify-content: center;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a::before {
+        content: "🔗";
+        margin-right: 0.2rem;
+      }
+    </style>
   </head>
   <body>
-    <a href="./cafe-peruano/index.html">Café Peruano</a>
-    <a href="./salon-spa/index.html">Salón Spa</a>
+    <h1>Web Pages</h1>
+    <main>
+      <a target="_blank" href="./cafe-peruano/index.html">Café Peruano</a>
+      <a target="_blank" href="./salon-spa/index.html">Salón Spa</a>
+      <a target="_blank" href="./portafolio-2020/index.html">Portafolio 2020</a>
+    </main>
   </body>
 </html>
